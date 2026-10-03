@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Store - Sheet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="shop-header">
+    <h1>Hostel Store</h1>
+    <nav>
+      <a href="index.html">Sheet</a>
+      <a href="till.html">Till</a>
+      <a href="people.html">Who is in</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Line</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody id="sheetBody"></tbody>
+      </table>
+    </section>
+
+    <section class="card form-card">
+      <form id="itemForm">
+        <input id="item" type="text" placeholder="Item">
+        <input id="quantity" type="number" placeholder="Quantity">
+        <input id="price" type="text" placeholder="Price">
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="card details">
+      <p>Total: <span id="total">0</span></p>
+      <p>Kind of total: <span id="totalKind"></span></p>
+      <p>Kind of Note: <span id="noteKind"></span></p>
+      <p>Does price text match price as a number? <span id="priceMatch"></span></p>
+      <p>Are they the same kind? <span id="sameKind"></span></p>
+      <p id="lineKindRow">Kind of Line: <span id="lineKind"></span></p>
+    </section>
+  </main>
+
+  <footer>Roll: 247274</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Store - Who is in</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="shop-header">
+    <h1>Hostel Store</h1>
+    <nav>
+      <a href="index.html">Sheet</a>
+      <a href="till.html">Till</a>
+      <a href="people.html">Who is in</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card form-card">
+      <input id="personName" type="text" placeholder="Name">
+      <button id="here">Here</button>
+      <button id="out">Out</button>
+    </section>
+
+    <section class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>In</th>
+          </tr>
+        </thead>
+        <tbody id="peopleBody"></tbody>
+      </table>
+      <p class="count">People in shop: <span id="peopleCount">0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
